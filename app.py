@@ -18,8 +18,8 @@ def get_connection():
         user="usr_umg_demo",
         password="Umg.2026",
         database="db_umg_demo",
-        ssl_ca=None,
-        ssl_disabled=True
+        ssl_verify_cert=False,
+        ssl_verify_identity=False
     )
 
 @st.cache_data(ttl=300)
